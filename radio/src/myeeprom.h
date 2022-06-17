@@ -24,7 +24,7 @@
 #include "datastructs.h"
 #include "bitfield.h"
 
-#define EEPROM_VER             219
+#define EEPROM_VER             220
 #define FIRST_CONV_EEPROM_VER  216
 
 #define GET_MODULE_PPM_POLARITY(idx)             g_model.moduleData[idx].ppm.pulsePol
@@ -214,7 +214,8 @@ enum TelemetrySensorFormula
   TELEM_FORMULA_CELL,
   TELEM_FORMULA_CONSUMPTION,
   TELEM_FORMULA_DIST,
-  TELEM_FORMULA_LAST = TELEM_FORMULA_DIST
+  TELEM_FORMULA_SCALE,
+  TELEM_FORMULA_LAST = TELEM_FORMULA_SCALE
 };
 
 enum SwashType {

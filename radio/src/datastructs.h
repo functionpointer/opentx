@@ -370,6 +370,9 @@ PACK(struct TelemetrySensor {
       uint8_t alt;
       uint16_t spare;
     }) dist);
+    NOBACKUP(PACK(struct {
+      uint8_t
+    };))
     uint32_t param;
   };
   NOBACKUP(
